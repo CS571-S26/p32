@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import NavigationBar from './components/NavigationBar';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -10,11 +10,11 @@ function App() {
     <Router>
       <NavigationBar />
       <Routes>
-        <Route path="/p32/login" element={<Login />} />
-        <Route path="/p32/register" element={<Register />} />
-        <Route path="/p32/dashboard" element={<Dashboard />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/dashboard" element={<Dashboard />} />
         <Route
-          path="/p32/"
+          path="/"
           element={
             <div className="home-container">
               <h1>Welcome to JournalKeeper</h1>

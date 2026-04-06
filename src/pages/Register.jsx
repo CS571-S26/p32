@@ -50,7 +50,7 @@ const Register = () => {
 
     try {
       await createUserWithEmailAndPassword(auth, email, password);
-      navigate('/p32/');
+      navigate('/');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -113,7 +113,7 @@ const Register = () => {
           <div className="text-center">
             <p className="mb-0">
               Already have an account?{' '}
-              <Link to="/p32/login" className="auth-link">
+              <Link to="/login" className="auth-link">
                 Login here
               </Link>
             </p>

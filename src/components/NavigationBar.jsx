@@ -22,7 +22,7 @@ const NavigationBar = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-      navigate('/p32/login');
+      navigate('/login');
     } catch (err) {
       console.error('Error logging out:', err.message);
     }
@@ -31,17 +31,17 @@ const NavigationBar = () => {
   return (
     <Navbar bg="dark" expand="lg" className="navbar-custom sticky-top">
       <Container>
-        <Navbar.Brand href="/p32/" className="brand-text">
+        <Navbar.Brand href="/#/" className="brand-text">
           <span className="brand-icon">📔</span> JournalKeeper
         </Navbar.Brand>
 
           <Nav className="ms-auto align-items-center">
             {!loading && !user ? (
               <>
-                <Nav.Link href="/p32/login" className="nav-link-auth">
+                <Nav.Link href="/#/login" className="nav-link-auth">
                   Login
                 </Nav.Link>
-                <Nav.Link href="/p32/register" className="nav-link-auth">
+                <Nav.Link href="/#/register" className="nav-link-auth">
                   <Button variant="primary" size="sm">
                     Register
                   </Button>
@@ -49,10 +49,10 @@ const NavigationBar = () => {
               </>
             ) : !loading && user ? (
               <>
-                <Nav.Link href="/p32/dashboard" className="nav-link-logged">
+                <Nav.Link href="/#/dashboard" className="nav-link-logged">
                   Dashboard
                 </Nav.Link>
-                <Nav.Link href="/p32/entries" className="nav-link-logged">
+                <Nav.Link href="/#/entries" className="nav-link-logged">
                   Entries
                 </Nav.Link>
                 <div className="nav-user-section">

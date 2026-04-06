@@ -14,7 +14,7 @@ const Dashboard = () => {
       if (currentUser) {
         setUser(currentUser);
       } else {
-        navigate('/p32/login');
+        navigate('/login');
       }
       setLoading(false);
     });

@@ -44,7 +44,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      navigate('/p32/');
+      navigate('/');
     } catch (err) {
       setError(err.message);
     } finally {
@@ -96,7 +96,7 @@ const Login = () => {
           <div className="text-center">
             <p className="mb-0">
               Don't have an account?{' '}
-              <Link to="/p32/register" className="auth-link">
+              <Link to="/register" className="auth-link">
                 Register here
               </Link>
             </p>
