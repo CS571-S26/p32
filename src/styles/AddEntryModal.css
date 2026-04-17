@@ -1,0 +1,62 @@
+.mood-selector {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.mood-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 12px 8px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 12px;
+  text-align: center;
+}
+
+.mood-option:hover {
+  border-color: #0d6efd;
+  background-color: #f8f9ff;
+  transform: translateY(-2px);
+}
+
+.mood-option.active {
+  border-color: #0d6efd;
+  background-color: #0d6efd;
+  color: white;
+}
+
+.mood-option:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.mood-emoji {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.mood-label {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.entry-textarea {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  resize: vertical;
+  min-height: 200px;
+}
+
+.entry-textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}

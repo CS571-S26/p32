@@ -3,6 +3,8 @@ import NavigationBar from './components/NavigationBar';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
+import Entries from './pages/Entries';
+import Statistics from './pages/Statistics';
 import './App.css';
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/entries" element={<Entries />} />
+        <Route path="/stats" element={<Statistics />} />
         <Route
           path="/"
           element={

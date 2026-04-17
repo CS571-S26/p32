@@ -1,0 +1,49 @@
+.recent-entries {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.recent-entry-item {
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+  transition: box-shadow 0.2s ease;
+}
+
+.recent-entry-item:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.entry-info {
+  flex: 1;
+  margin-bottom: 8px;
+}
+
+.entry-title {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+.entry-date {
+  font-size: 0.85rem;
+}
+
+.entry-preview {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .recent-entry-item {
+    padding: 12px;
+  }
+
+  .entry-title {
+    font-size: 0.95rem;
+  }
+}
